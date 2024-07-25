@@ -5,6 +5,8 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -32,7 +34,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Montserrat", sans-serif;
+  --font-family-sans-serif: "Montserrat", "Epilogue" sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -43,7 +45,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Epilogue",sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -434,7 +436,7 @@ h6, .h6 {
 }
 
 .display-2 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
