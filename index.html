@@ -23,14 +23,231 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
+    <!--=============== REMIXICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <section class="cost-nav">
+        <header class="header-1">
+            <nav class="nav-1 container-1">
+                <div class="nav__data">
+                    <a href="#" class="nav__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
 
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-1 py-lg-0 px-lg-4">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__burger"></i>
+                        <i class="ri-close-line nav__close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="./index.html" class="nav__link">Home</a></li>
+
+                        <!-- our group -->
+
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Our Group <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="./about.html" class="dropdown__link">
+                                        <i class="ri-user-line"></i> Who We Are
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <i class="ri-brain-fill"></i> Our Leadership
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <i class="ri-building-2-fill"></i> Our Heritage
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        <!-- business division -->
+
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Business Division <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="./ethanol.html" class="dropdown__link">
+                                        <i class="ri-test-tube-fill"></i> Ethanol
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="./ddgs.html" class="dropdown__link">
+                                        <i class="ri-building-3-fill"></i> DDGS
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="./co2.html" class="dropdown__link">
+                                        <i class="ri-windy-fill"></i> CO2
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <i class="ri-layout-grid-fill"></i> Bricks
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--=============== Sustainability ===============-->
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Sustainability <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <i class="ri-pie-chart-line"></i> MOEF & CC Compliances
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <i class="ri-bar-chart-box-line"></i> Annual Environmental Statement
+                                    </a>
+                                </li>
+
+                                <!--=============== DROPDOWN SUBMENU ===============-->
+                                <li class="dropdown__subitem">
+                                    <div class="dropdown__link">
+                                        <i class="ri-bar-chart-horizontal-fill"></i> QHSE Managenent <i
+                                            class="ri-add-line dropdown__add"></i>
+                                    </div>
+
+                                    <ul class="dropdown__submenu">
+                                        <li>
+                                            <a href="#" class="dropdown__sublink">
+                                                <i class="ri-file-list-line"></i> QHSE Policy
+                                            </a>
+                                        </li>
+
+                                        <!-- <li>
+                                    <a href="#" class="dropdown__sublink">
+                                       <i class="ri-cash-line"></i> Payments
+                                    </a>
+                                 </li>
+      
+                                 <li>
+                                    <a href="#" class="dropdown__sublink">
+                                       <i class="ri-refund-2-line"></i> Refunds
+                                    </a>
+                                 </li> -->
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- CSR -->
+
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                CSR <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="./health.html" class="dropdown__link">
+                                        <i class="ri-first-aid-kit-fill"></i> Health
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="./education.html" class="dropdown__link">
+                                        <i class="ri-book-2-fill"></i> Education
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <i class="ri-football-fill"></i> Sports
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <i class="ri-heart-fill"></i> Culture
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <i class="ri-community-fill"></i> Community
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--=============== News ===============-->
+                        <li class="dropdown__item">
+                            <div class="nav__link">
+                                Newsroom <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <ul class="dropdown__menu">
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <i class="ri-list-unordered"></i> BAPL Bulletin
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <i class="ri-image-2-fill"></i> Media Kit
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <i class="ri-newspaper-fill"></i> In The News
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__link">
+                                        <i class="ri-calendar-event-fill"></i> Events
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#" class="nav__link">Career</a></li>
+
+                        <li><a href="#" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+    </section>
+
+    <!-- <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-1 py-lg-0 px-lg-4">
         <a href="index.html" class="navbar-brand d-block d-lg-none">
             <h1 class="display-4 text-white text-uppercase m-0">Bio-agro</h1>
         </a>
@@ -54,7 +271,7 @@
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <!-- Navbar End -->
 
 
