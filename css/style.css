@@ -43,6 +43,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  list-style: none;
 }
 
 html {
@@ -4585,6 +4586,7 @@ input[type="button"].btn-block {
 /*=============== DROPDOWN ===============*/
 .dropdown__item {
   cursor: pointer;
+  
 }
 
 .dropdown__arrow {
@@ -8691,7 +8693,7 @@ button.bg-dark:focus {
 
 .pt-5,
 .py-5 {
-  padding-top: 3rem !important;
+  padding-top: 1.5rem !important;
 }
 
 .pr-5,
@@ -8701,7 +8703,7 @@ button.bg-dark:focus {
 
 .pb-5,
 .py-5 {
-  padding-bottom: 3rem !important;
+  padding-bottom: 1.5rem !important;
 }
 
 .pl-5,
