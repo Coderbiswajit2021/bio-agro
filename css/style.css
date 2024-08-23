@@ -44,6 +44,7 @@
 *::after {
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
 }
 
 html {
@@ -177,7 +178,7 @@ a {
 
 a:hover {
   color: #006db3;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 a:not([href]):not([class]) {
@@ -4440,21 +4441,23 @@ input[type="button"].btn-block {
 
 
 /* --------------------------------------------------------------------------------------header style-------------------- */
-.cost-nav{
+.cost-nav {
   width: 100%;
   height: auto;
 
 }
+
 .container-1 {
   max-width: 1200px;
   margin-inline: 1.5rem;
 }
+
 .header-1 {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: hsl(0, 0%, 96%);
+  background-color: hsl(216.61deg 73.72% 22%);
   box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
   z-index: 100;
 }
@@ -4468,6 +4471,7 @@ input[type="button"].btn-block {
 .nav__close {
   color: #000;
 }
+
 .nav__data {
   height: 100%;
   display: flex;
@@ -4530,15 +4534,15 @@ input[type="button"].btn-block {
   }
 
   .nav__list {
-    background-color: hsl(0, 0%, 96%);
+    background-color: hsl(216.61deg 73.72% 22%);
     padding-top: 1rem;
     list-style: none;
   }
 }
 
 .nav__link {
-  color: #000;
-  background-color: hsl(0, 0%, 96%);
+  color: #ffffff;
+  background-color: hsl(216.61deg 73.72% 22%);
   font-weight: 600;
   padding: 1.25rem 1.5rem;
   display: flex;
@@ -4546,8 +4550,9 @@ input[type="button"].btn-block {
   align-items: center;
   transition: background-color .3s;
 }
+
 .nav__link:hover {
-  background-color: #a1d55f;
+  background-color: hsl(216.61deg 73.72% 22%);
 }
 
 /* Show menu */
@@ -4567,6 +4572,7 @@ input[type="button"].btn-block {
   opacity: 1;
   transform: rotate(90deg);
 }
+
 .show-menu {
   opacity: 1;
   top: 3.5rem;
@@ -4583,10 +4589,11 @@ input[type="button"].btn-block {
   opacity: 1;
   transform: rotate(90deg);
 }
+
 /*=============== DROPDOWN ===============*/
 .dropdown__item {
   cursor: pointer;
-  
+
 }
 
 .dropdown__arrow {
@@ -4598,14 +4605,15 @@ input[type="button"].btn-block {
 .dropdown__link,
 .dropdown__sublink {
   padding: 1.25rem 1.25rem 1.25rem 2.5rem;
-  color: #000;
-  background-color: #e6e6e6;
+  color: #ffffff;
+  background-color: hsl(216.61deg 73.72% 22%);
   display: flex;
   align-items: center;
   column-gap: .5rem;
   font-weight: 500;
   transition: background-color .3s;
 }
+
 .dropdown__link i,
 .dropdown__sublink i {
   font-size: 1.25rem;
@@ -4614,7 +4622,9 @@ input[type="button"].btn-block {
 
 .dropdown__link:hover,
 .dropdown__sublink:hover {
-  background-color: #e6e6e6;
+  background-color: #a4cc41;
+  color: #000;
+  
 }
 
 .dropdown__menu,
@@ -4740,7 +4750,90 @@ input[type="button"].btn-block {
   }
 }
 
+.heading-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../img/carousel-2.jpg");
+  background-size: cover !important;
+  background-position: center !important;
+  padding-top: 13rem;
+  padding-bottom: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-1 h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
+}
+
 /* --------------------------------------------------------------------------------------header style-------------------- */
+
+/* product page css ------------------------------------------------------------------------------------------------------ */
+.featured{
+  padding:2rem 9%;
+}
+.featured p{
+  color: black;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.featured .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1rem;
+}
+.featured .box-container .box{
+  border:.1rem solid rgba(0,0,0,.2);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+  overflow:hidden;
+  background:#fff;
+  flex:1 1 20rem;
+}
+.featured .box-container .box .image-container{
+  overflow:hidden;
+  position: relative;
+  width: 100%;
+  height: 20rem;
+}
+.featured .box-container .box .image-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+.featured .box-container .box:hover .image-container img{
+  transform: scale(1.1);
+}
+@media (max-width:991px){
+  section{
+      padding:1.5rem;
+  }
+  .heading-1 h1{
+    font-size: 3rem;
+  }
+  .featured p{
+    font-size: 1rem;
+  }
+
+  .nav__logo img {
+    width: 80px;
+  }
+}
+
+.featured ul{
+  font-size: 1.1rem;
+  color: #000;
+}
+.featured ul li{
+  padding-bottom: 0.7rem;
+}
+.featured ul li b{
+  text-transform: uppercase;
+}
+
 
 
 
