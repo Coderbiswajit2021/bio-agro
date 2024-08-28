@@ -4833,6 +4833,13 @@ input[type="button"].btn-block {
 .featured ul li b{
   text-transform: uppercase;
 }
+.featured ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #003252;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 
 
 
