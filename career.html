@@ -30,6 +30,12 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/career.css">
+
+    <!-- costum link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -62,7 +68,7 @@
                             <ul class="dropdown__menu">
                                 <li>
                                     <a href="./about.html" class="dropdown__link">
-                                        <i class="ri-user-line"></i> Who We Are
+                                        <i class="ri-user-line"></i> About Us
                                     </a>
                                 </li>
 
@@ -72,11 +78,11 @@
                                     </a>
                                 </li>
 
-                                <li>
+                                <!-- <li>
                                     <a href="./heritage.html" class="dropdown__link">
                                         <i class="ri-building-2-fill"></i> Our Heritage
                                     </a>
-                                </li>
+                                </li> -->
                             </ul>
                         </li>
 
@@ -135,7 +141,7 @@
                                 </li>
 
                                 <!--=============== DROPDOWN SUBMENU ===============-->
-                                <li class="dropdown__subitem">
+                                <!-- <li class="dropdown__subitem">
                                     <div class="dropdown__link">
                                         <i class="ri-bar-chart-horizontal-fill"></i> QHSE Managenent <i
                                             class="ri-add-line dropdown__add"></i>
@@ -148,7 +154,7 @@
                                             </a>
                                         </li>
 
-                                        <!-- <li>
+                                        <li>
                                     <a href="#" class="dropdown__sublink">
                                        <i class="ri-cash-line"></i> Payments
                                     </a>
@@ -158,9 +164,9 @@
                                     <a href="#" class="dropdown__sublink">
                                        <i class="ri-refund-2-line"></i> Refunds
                                     </a>
-                                 </li> -->
+                                 </li>
                                     </ul>
-                                </li>
+                                </li> -->
                             </ul>
                         </li>
 
@@ -213,19 +219,7 @@
                             <ul class="dropdown__menu">
                                 <li>
                                     <a href="./bapl.html" class="dropdown__link">
-                                        <i class="ri-list-unordered"></i> BAPL Bulletin
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="./media.html" class="dropdown__link">
-                                        <i class="ri-image-2-fill"></i> Media Kit
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="./news.html" class="dropdown__link">
-                                        <i class="ri-newspaper-fill"></i> In The News
+                                        <i class="ri-list-unordered"></i> BAEPL Bulletin
                                     </a>
                                 </li>
 
@@ -247,11 +241,19 @@
 
     </section>
 
-    <div class="heading-1" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),url('./img/bricks-4.png');">
+    <div class="heading-1"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),url('./img/bricks-4.png');">
         <h1>Career</h1>
     </div>
 
 
+    <div class="jobs-list-container">
+        <h2>5 Jobs</h2>
+
+        <input class="job-search" type="text" placeholder="Search here..." />
+
+        <div class="jobs"></div>
+    </div>
 
 
 
@@ -391,6 +393,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/career.js"></script>
 
     <script>
         /*=============== SHOW MENU ===============*/
