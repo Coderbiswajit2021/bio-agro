@@ -4470,7 +4470,7 @@ input[type="button"].btn-block {
 .nav__logo,
 .nav__burger,
 .nav__close {
-  color: #000;
+  color: #ffffff;
 }
 
 .nav__data {
@@ -4845,6 +4845,18 @@ input[type="button"].btn-block {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

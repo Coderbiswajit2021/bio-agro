@@ -30,6 +30,10 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slider.css">
+
+    
+    
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -412,7 +416,7 @@
     <!-- Service End -->
 
 
-    <!-- FAQs Start -->
+    <!-- Manufacturing process -->
     <div class="container-fluid py-5" id="faqs">
         <div class="container py-5">
             <div class="section-title position-relative text-center">
@@ -424,8 +428,20 @@
             </div>
         </div>
     </div>
-    <!-- FAQs End -->
+    <!-- Manufacturing process -->
 
+    <!-- our invister -->
+    <div class="invister-container">
+        <h2 class="text-center font-weight-bold">Our Partners</h2>
+        <section class="customer-logos slider">
+            <div class="slide"><img src="img/invister-1.png" alt="logo"></div>
+            <div class="slide"><img src="img/invister-2.png" alt="logo"></div>
+            <div class="slide"><img src="img/invister-3.png" alt="logo"></div>
+            <div class="slide"><img src="img/invister-4.png" alt="logo"></div>
+            
+        </section>
+    </div>
+    <!-- our invister -->
 
     <!-- Gallery Start -->
     <div class="container-fluid bg-gallery" id="project" style="padding: 120px 0; margin: 90px 0;">
@@ -666,56 +682,6 @@
     <!-- Testimonial End -->
 
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
-        <div class="container py-5">
-            <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Contact</h6>
-                <h1 class="font-secondary display-4">Get In Touch</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="col-sm-6 control-group">
-                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" id="name"
-                                        placeholder="Your Name" required="required"
-                                        data-validation-required-message="Please enter your name" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="col-sm-6 control-group">
-                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" id="email"
-                                        placeholder="Your Email" required="required"
-                                        data-validation-required-message="Please enter your email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control bg-secondary border-0 py-4 px-3" id="subject"
-                                    placeholder="Subject" required="required"
-                                    data-validation-required-message="Please enter a subject" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="6" id="message"
-                                    placeholder="Message" required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="text-center">
-                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit"
-                                    id="sendMessageButton">Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact End -->
-
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
@@ -777,7 +743,7 @@
                             PS : Sonepur <br>
                             Dist : Sonepur <br>
                             Pin: 767017 <br>
-                            State: Odisah</p>
+                            State: Odisha.</p>
 
                         <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Bhopal-Plant site
                         </h5>
@@ -1056,6 +1022,9 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <!-- <script src="js/slider.js"></script> -->
+
+    
 
     <script>
         /*=============== SHOW MENU ===============*/
@@ -1076,6 +1045,35 @@
 
 
     </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    setting: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    setting: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+
+    </script>
+    
 </body>
 
 </html>
