@@ -30,6 +30,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/event.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -235,11 +236,99 @@
 
     </section>
 
-    <div class="heading-1" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),url('./img/bricks-4.png');">
+    <div class="heading-1"
+        style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),url('./img/bricks-4.png');">
         <h1>Events</h1>
     </div>
 
 
+    <div class="gallery">
+
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">all</li>
+            <li class="buttons" data-filter="ice-cream">inaguration</li>
+            <li class="buttons" data-filter="chocolate">holi</li>
+            <li class="buttons" data-filter="cake">plant</li>
+            <li class="buttons" data-filter="juice">work</li>
+            <!-- <li class="buttons" data-filter="sandwich">sandwich</li> -->
+        </ul>
+
+        <div class="gallery-image-container">
+
+            <a href="event-img/innaguration-1.JPG" class="image ice-cream">
+                <img src="event-img/innaguration-1.JPG" alt="">
+            </a>
+            <a href="event-img/innaguration-2.JPG" class="image ice-cream">
+                <img src="event-img/innaguration-2.JPG" alt="">
+            </a>
+            <a href="event-img/innaguration-3.JPG" class="image ice-cream">
+                <img src="event-img/innaguration-3.JPG" alt="">
+            </a>
+            <a href="event-img/innaguration-4.JPG" class="image ice-cream">
+                <img src="event-img/innaguration-4.JPG" alt="">
+            </a>
+            <a href="event-img/innaguration-5.JPG" class="image ice-cream">
+                <img src="event-img/innaguration-5.JPG" alt="">
+            </a>
+            <a href="event-img/innaguration-6.JPG" class="image ice-cream">
+                <img src="event-img/innaguration-6.JPG" alt="">
+            </a>
+
+            <a href="event-img/holi.jpg" class="image chocolate">
+                <img src="event-img/holi.jpg" alt="">
+            </a>
+            <!-- <a href="images/chocolate2.jpg" class="image chocolate">
+                <img src="images/chocolate2.jpg" alt="">
+            </a> -->
+
+            <a href="event-img/plant-1.png" class="image cake">
+                <img src="event-img/plant-1.png" alt="">
+            </a>
+            <a href="event-img/plant-2.jpg" class="image cake">
+                <img src="event-img/plant-2.jpg" alt="">
+            </a>
+            <a href="event-img/plant-3.PNG" class="image cake">
+                <img src="event-img/plant-3.PNG" alt="">
+            </a>
+            <a href="event-img/plant-4.jpg" class="image cake">
+                <img src="event-img/plant-4.jpg" alt="">
+            </a>
+            <!-- <a href="images/cake5.jpg" class="image cake">
+                <img src="images/cake5.jpg" alt="">
+            </a> -->
+
+            <a href="event-img/work-1.jpg" class="image juice">
+                <img src="event-img/work-1.jpg" alt="">
+            </a>
+            <a href="event-img/work-2.jpg" class="image juice">
+                <img src="event-img/work-2.jpg" alt="">
+            </a>
+            <a href="event-img/work-3.jpg" class="image juice">
+                <img src="event-img/work-3.jpg" alt="">
+            </a>
+            <a href="event-img/work-4.jpg" class="image juice">
+                <img src="event-img/work-4.jpg" alt="">
+            </a>
+            <a href="event-img/work-5.jpg" class="image juice">
+                <img src="event-img/work-5.jpg" alt="">
+            </a>
+
+            <!-- <a href="images/sandwich1.jpg" class="image sandwich">
+                <img src="images/sandwich1.jpg" alt="">
+            </a>
+            <a href="images/sandwich2.jpg" class="image sandwich">
+                <img src="images/sandwich2.jpg" alt="">
+            </a>
+            <a href="images/sandwich3.jpg" class="image sandwich">
+                <img src="images/sandwich3.jpg" alt="">
+            </a>
+            <a href="images/sandwich4.jpg" class="image sandwich">
+                <img src="images/sandwich4.jpg" alt="">
+            </a> -->
+
+        </div>
+
+    </div>
 
 
 
@@ -307,7 +396,7 @@
                             PS : Sonepur <br>
                             Dist : Sonepur <br>
                             Pin: 767017 <br>
-                            State: Odisah</p>
+                            State: Odisha</p>
 
                         <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Bhopal-Plant site
                         </h5>
@@ -398,6 +487,44 @@
         showMenu('nav-toggle', 'nav-menu')
 
 
+    </script>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('.buttons').click(function () {
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+                var filter = $(this).attr('data-filter')
+
+                if (filter == 'all') {
+                    $('.image').show(400);
+                } else {
+                    $('.image').not('.' + filter).hide(200);
+                    $('.image').filter('.' + filter).show(400);
+                }
+
+            });
+
+            $('.gallery').magnificPopup({
+
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+
+            });
+
+        });
     </script>
 </body>
 
