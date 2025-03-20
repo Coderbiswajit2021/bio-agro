@@ -1,56 +1,72 @@
 const jobs = [
     {
-      title: "DM Production",
-      image: "./img-career/data-scientist.svg",
-      details:
-        "Responsible for designing, developing and maintaining software systems and applications.",
-      openPositions: "2",
-      link: "#",
-    },
-  
-    {
-      title: "Data Scientist",
-      image: "./img-career/marketing-manager.svg",
-      details:
-        "Responsible for collecting, analyzing and interpreting large data sets to help organizations make better decisions.",
-      openPositions: "3",
-      link: "#",
-    },
-  
-    {
-      title: "Project Manager",
-      image: "./img-career/product-manager.svg",
-      details:
-        "Responsible for planning, executing and closing projects on time and within budget.",
-      openPositions: "1",
-      link: "#",
-    },
-  
-    {
-      title: "Product Manager",
+      title: "Shift Incharge (Power Plant)",
       image: "./img-career/project-manager.svg",
       details:
-        "Responsible for managing the entire product life cycle, from ideation to launch and post-launch maintenance.",
+        "Experience: 4 - 5 years.",
       openPositions: "1",
-      link: "#",
+      link: "mailto:swaroop.nayak@bioagroenergy.in",
     },
   
     {
-      title: "Sales Representative",
-      image: "./img-career/sales-representative.svg",
+      title: "DCS Engg (Power Plant)",
+      image: "./img-career/project-manager.svg",
       details:
-        "Responsible for reaching out to potential customers and closing sales deals.",
-      openPositions: "4",
-      link: "#",
+        "Experience: 3-4 years.",
+      openPositions: "1",
+      link: "mailto:swaroop.nayak@bioagroenergy.in",
     },
   
     {
-      title: "Marketing Manager",
-      image: "./img-career/software-engineer.svg",
+      title: "1st Class Boiler Operator",
+      image: "./img-career/project-manager.svg",
       details:
-        "Responsible for creating and executing marketing strategies to promote a company or product.",
+        "Experience: 4-5 years.",
       openPositions: "1",
-      link: "#",
+      link: "mailto:swaroop.nayak@bioagroenergy.in",
+    },
+  
+    {
+      title: "2nd Class Boiler Operator",
+      image: "./img-career/project-manager.svg",
+      details:
+        "Experience: 4-5 years",
+      openPositions: "1",
+      link: "mailto:swaroop.nayak@bioagroenergy.in",
+    },
+  
+    {
+      title: "Sr. Engg (Mechanical)",
+      image: "./img-career/project-manager.svg",
+      details:
+        "Experience: 4-5 years",
+      openPositions: "1",
+      link: "mailto:swaroop.nayak@bioagroenergy.in",
+    },
+  
+    {
+      title: "Shift Engg (Mechinical)",
+      image: "./img-career/project-manager.svg",
+      details:
+        "Experience: 4-5 years.",
+      openPositions: "1",
+      link: "mailto:swaroop.nayak@bioagroenergy.in",
+    },
+    {
+      title: "Electrical & Instrumental Incharge",
+      image: "./img-career/project-manager.svg",
+      details:
+        "Experience: 4-5 years.",
+      openPositions: "1",
+      link: "mailto:swaroop.nayak@bioagroenergy.in",
+    },
+    {
+      title: "Electrical Incharge",
+      image: "./img-career/project-manager.svg",
+      details:
+        "Experience: 3-4 years.",
+      openPositions: "1",
+      link: "mailto:swaroop.nayak@bioagroenergy.in",
     },
   ];
   
@@ -87,7 +103,7 @@ const jobs = [
   
         let detailsBtn = document.createElement("a");
         detailsBtn.href = job.link;
-        detailsBtn.innerHTML = "More Details";
+        detailsBtn.innerHTML = "Send Resume";
         detailsBtn.classList.add("details-btn");
   
         let openPositions = document.createElement("span");

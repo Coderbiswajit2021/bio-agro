@@ -11191,6 +11191,7 @@ h6 {
 .gallery-item {
   position: relative;
   overflow: hidden;
+  padding: 5px;
 }
 
 .product-img img,
